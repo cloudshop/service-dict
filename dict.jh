@@ -1,0 +1,25 @@
+
+entity Industry {
+	name String,
+	code String,
+    created_time Instant,
+    modified_time Instant,
+    modified_by Long
+    deleted Boolean,
+    status Integer,
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Industry{parent} to Industry{child}
+}
+
+// Set pagination options
+paginate Industry with infinite-scroll
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceClass
+// Set an angular suffix
+//angularSuffix * with mySuffix

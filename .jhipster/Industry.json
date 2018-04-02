@@ -1,0 +1,54 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "parent",
+            "otherEntityName": "industry",
+            "otherEntityRelationshipName": "child"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "child",
+            "otherEntityName": "industry",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "code",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdtime",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "modifiedtime",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "modifiedby",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "deleted",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20180402033424",
+    "entityTableName": "industry",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "dict"
+}
