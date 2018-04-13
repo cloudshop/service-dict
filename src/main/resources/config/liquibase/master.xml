@@ -6,7 +6,12 @@
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20180402033424_added_entity_Industry.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180413022246_added_entity_Province.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180413022412_added_entity_City.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180413022600_added_entity_County.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="config/liquibase/changelog/20180402033424_added_entity_constraints_Industry.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180413022600_added_entity_constraints_County.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180413022412_added_entity_constraints_City.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>
