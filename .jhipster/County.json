@@ -1,0 +1,29 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "city",
+            "otherEntityName": "city",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pinyin",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180413022600",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "county",
+    "jpaMetamodelFiltering": true,
+    "pagination": "pagination",
+    "microserviceName": "dict",
+    "searchEngine": false
+}

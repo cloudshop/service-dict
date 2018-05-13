@@ -1,0 +1,35 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "county",
+            "otherEntityName": "county",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "city"
+        },
+        {
+            "relationshipName": "province",
+            "otherEntityName": "province",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pinyin",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180413022412",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "city",
+    "jpaMetamodelFiltering": true,
+    "pagination": "pagination",
+    "microserviceName": "dict",
+    "searchEngine": false
+}

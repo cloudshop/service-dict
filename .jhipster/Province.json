@@ -1,0 +1,29 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "city",
+            "otherEntityName": "city",
+            "relationshipType": "one-to-many",
+            "otherEntityRelationshipName": "province"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pinyin",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180413022246",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "province",
+    "jpaMetamodelFiltering": true,
+    "pagination": "pagination",
+    "microserviceName": "dict",
+    "searchEngine": false
+}
